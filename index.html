@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9; /* Світлий фон */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #e6e6fa; /* Лавандовий колір */
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #4b0082; /* Темний лавандовий колір */
+        }
+        section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffffff; /* Білий фон для секції */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4b0082; /* Темний лавандовий колір */
+        }
+        input[type="text"], input[type="email"], input[type="date"], input[type="file"], textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            height: 100px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 contenteditable="true">Створіть власне резюме, заповнивши всі дані нижче</h1>
+    <h1 contenteditable="true">Ваше ПІБ</h1>
+    <input type="file" id="photoUpload" accept="image/*">
+    <img id="profilePhoto" src="" alt="Ваше фото" style="display:none; max-width:150px; margin-top:10px;">
+</header>
+
+<section>
+    <h2>Особисті дані</h2>
+    <label>Адреса:</label>
+    <input type="text" contenteditable="true" placeholder="Введіть вашу адресу">
+    
+    <label>Номер телефону:</label>
+    <input type="text" contenteditable="true" placeholder="Введіть ваш номер телефону">
+    
+    <label>Email:</label>
+    <input type="email" contenteditable="true" placeholder="Введіть ваш email">
+    
+    <label>Дата народження:</label>
+    <input type="date" contenteditable="true">
+    
+    <label>Місце народження:</label>
+    <input type="text" contenteditable="true" placeholder="Введіть ваше місце народження">
+    
+    <label>Стать:</label>
+    <input type="text" contenteditable="true" placeholder="Введіть вашу стать">
+    
+    <label>Національність:</label>
+    <input type="text" contenteditable="true" placeholder="Введіть вашу національність">
+</section>
+
+<section>
+    <h2>Інтереси</h2>
+    <textarea contenteditable="true" placeholder="Введіть ваші інтереси"></textarea>
+</section>
+
+<section>
+    <h2>Ваші сильні сторони</h2>
+    <textarea contenteditable="true" placeholder="Чому Ви найкраща кандидатура на цю посаду?"></textarea>
+</section>
+
+<section>
+    </h2> Досвід роботи</h2>
+    <ul id="workExperience">
+        <input type="text" contenteditable="true" placeholder="Посада - Назва компанії (Рік - Рік)">
+        <input type="text" contenteditable="true" placeholder="Посада - Назва компанії (Рік - Рік)">
+        <input type="text" contenteditable="true" placeholder="Посада - Назва компанії (Рік - Рік)">
+    </ul>
+</section>
+
+<section>
+    <h2>Освіта та кваліфікації</h2>
+    <ul id="education">
+        <input type="text" contenteditable="true" placeholder="Ступінь - Назва навчального закладу (Рік отримання)">
+        <input type="text" contenteditable="true" placeholder="Ступінь - Назва навчального закладу (Рік отримання)">
+        <input type="text" contenteditable="true" placeholder="Ступінь - Назва навчального закладу (Рік отримання)">
+    </ul>
+</section>
+
+<section>
+    <h2>Навички</h2>
+    <ul id="skills">
+        <input type="text" contenteditable="true" placeholder="Навичка - Рівень (наприклад: Початковий, Середній, Просунутий) або якщо це іноземна мова, тоді (A1,A2,B1,B2,C1,C2 і тд)">
+        <input type="text" contenteditable="true" placeholder="Навичка - Рівень (наприклад: Початковий, Середній, Просунутий) або якщо це іноземна мова, тоді (A1,A2,B1,B2,C1,C2 і тд)">
+        <input type="text" contenteditable="true" placeholder="Навичка - Рівень (наприклад: Початковий, Середній, Просунутий) або якщо це іноземна мова, тоді (A1,A2,B1,B2,C1,C2 і тд)">
+        <input type="text" contenteditable="true" placeholder="Навичка - Рівень (наприклад: Початковий, Середній, Просунутий) або якщо це іноземна мова, тоді (A1,A2,B1,B2,C1,C2 і тд)">
+        <input type="text" contenteditable="true" placeholder="Навичка - Рівень (наприклад: Початковий, Середній, Просунутий) або якщо це іноземна мова, тоді (A1,A2,B1,B2,C1,C2 і тд)">
+    </ul>
+</section>
+
+<section>
+    <h2>Додаткові матеріали. У них можуть входити Ваші попередні проєкти, сертифікати, нагороди, тощо...</h2>
+    <input type="file" id="additionalMaterialsUpload" accept=".pdf,.doc,.docx,.jpg,.png,.jpeg">
+</section>
+
+<footer>
+    <p>&copy; 2024 Ваше ім'я. Всі права захищені.</p>
+</footer>
+
+<script>
+// Функція для завантаження фото профілю
+document.getElementById('photoUpload').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    
+    reader.onload = function(e) {
+        const img = document.getElementById('profilePhoto');
+        img.src = e.target.result;
+        img.style.display = 'block'; // Показываем изображение
+    }
+    
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+});
+</script>
+
+</body>
+</html>
+
